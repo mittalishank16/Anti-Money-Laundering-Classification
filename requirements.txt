@@ -9,3 +9,7 @@ tensorflow
 gradio
 mlflow
 optuna
+fastapi
+uvicorn
+pydantic
+joblib
