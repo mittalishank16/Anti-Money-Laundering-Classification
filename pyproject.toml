@@ -1,0 +1,19 @@
+[project]
+name = "anti-money-laundering-classification"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "gradio>=6.3.0",
+    "imbalanced-learn>=0.14.1",
+    "matplotlib>=3.10.8",
+    "mlflow>=3.8.1",
+    "numpy>=2.2.6",
+    "optuna>=4.7.0",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.7.2",
+    "seaborn>=0.13.2",
+    "tensorflow>=2.20.0",
+    "xgboost>=3.1.3",
+]
