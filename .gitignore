@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.python-version
+uv.lock
+*.csv
+*.pkl
+*.h5
+*.pt
+data
+dataset_joblib_files
+mlruns
+models
+exception.py
+logger.py
+echo data/*.csv >> .gitignore
+echo "*.joblib" >> .gitignore
