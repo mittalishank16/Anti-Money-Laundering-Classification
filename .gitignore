@@ -22,3 +22,4 @@ exception.py
 logger.py
 echo data/*.csv >> .gitignore
 echo "*.joblib" >> .gitignore
+*.joblib
