@@ -2,7 +2,7 @@
 MLOps Pipeline: Anti-Money Laundering (AML) Data Preparation
 Consolidated Script including Chunk-based Undersampling, Frequency Encoding, and Robust Scaling.
 """
-
+import os
 import pandas as pd
 import numpy as np
 import math
@@ -60,9 +60,10 @@ def feature_engineering(df: pd.DataFrame) -> pd.DataFrame:
         df['hour'] = df['timestamp'].dt.hour
         df['day'] = df['timestamp'].dt.day
         df['month'] = df['timestamp'].dt.month
+        df['year'] = df['timestamp'].dt.year
     
     # 4. Drop Raw IDs
-    cols_to_drop = ['timestamp', 'account', 'account_1']
+    cols_to_drop = ['timestamp']
     df = df.drop(columns=[c for c in cols_to_drop if c in df.columns])
     
     return df
